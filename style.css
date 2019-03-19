@@ -181,3 +181,27 @@ h3:hover {
 .fa-redo-alt {
 	right: 50px;
 }
+
+#menu .spotli .spota .filter-names {
+	font-weight: 500;
+}
+
+#menu #myaccordion .spotli .spota .filter-names {
+	font-weight: 400;
+}
+
+#menu li a span {
+	left: 12px;
+}
+
+#menu li a span span {
+	left: -23px;
+}
+
+#menu li {
+	padding: .5em .5em .5em .7em
+}
+
+#menu #myaccordion li {
+	padding: .0em .0em .0em .0em
+}
