@@ -2,27 +2,30 @@ var i = 1;
 var text = document.querySelector('#buttons').innerHTML;
 var buttons = text.split('<');
 var value = '';
-var value2 = document.querySelector('#myaccordion').innerHTML;
+var value2 = document.querySelector('#menu').innerHTML;
 for (i = 1; i <= buttons.length - 1; i++) {
     value2 = value2.replace('<li>', '<li class=\"spotli\"><a class=\"spota\" data-id=\"div' + i + '\" href=\"#\"><span class=\"filter-names\">');
     $("#buttons > input:nth-child(" + i + ")").wrap("<div id=\"div" + i + "\">");
 }
 
 value2 = value2.replace(/<\/li>/g, '</span></a></li>');
-$('#myaccordion').html(value2);
+$('#menu').html(value2);
 
 function triggerClick(id) {
     var children = $("#" + id).children();
     children.click();
 }
+
 $(".spota").click(function() {
     var navMenu = $(this).attr('data-id');
     triggerClick(navMenu);
 });
+
 $(".icons").click(function() {
     var navMenu = $(this).attr('data-id');
     triggerClick(navMenu);
 });
+
 document.getElementById("shadow").onclick = function() {
     document.getElementById("menu").style.width = "0px";
     document.getElementById("shadow").style.width = "0%";
@@ -55,6 +58,7 @@ document.getElementById("shadow").onclick = function() {
         },
     });
 };
+
 document.getElementById("menubutton").onclick = function() {
     if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-times icons\" alt=\"Open menu\"></i>") {
         document.getElementById("menu").style.width = "0px";
@@ -96,9 +100,6 @@ document.getElementById("menubutton").onclick = function() {
     }
 };
 
-
-
-
 //Accordian variables
 var headBkgColor = "#FFFFFF";
 
@@ -130,6 +131,7 @@ $("#myaccordion").accordion({
         });
     },
 });
+
 //Header background color
 $(".ui-accordion .ui-accordion-header").css({
     "background": headBkgColor
