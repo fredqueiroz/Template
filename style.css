@@ -194,12 +194,17 @@ h3:hover {
 	left: 12px;
 }
 
+#menu #myaccordion li a span {
+	left: 21px;
+}
+
 #menu li a span span {
 	left: -23px;
 }
 
 #menu li {
 	padding: .5em .5em .5em .7em;
+margin-top: 5px;
 }
 
 #menu #myaccordion li {
