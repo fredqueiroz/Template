@@ -27,10 +27,12 @@ $(".icons").click(function() {
 });
 
 document.getElementById("shadow").onclick = function() {
+document.getElementById("shadow").style.width = "0%";
+document.getElementById("filter").style.width = "0px";
+document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>";
     document.getElementById("menu").style.width = "0px";
-    document.getElementById("shadow").style.width = "0%";
     document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>";
-    $("#myaccordion").accordion({
+    $("#myaccordion,#myaccordionfilters").accordion({
         collapsible: true,
         active: false,
         heightStyle: 'content',
@@ -40,17 +42,17 @@ document.getElementById("shadow").onclick = function() {
             } else {
                 $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
             }
-            $(".sf-input-with-placeholder").width("173px");
-            $(".ListContainer").width("200px");
-            $(".ListContainerScroll").width("194px");
-            $(".Image").css("left", "197px");
-            $(".sfc-scrollable").width("192px");
-            $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+            $(".sf-input-with-placeholder").width("333px");
+            $(".ListContainer").width("360px");
+            $(".ListContainerScroll").width("354px");
+            $(".Image").css("left", "357px");
+            $(".sfc-scrollable").width("352px");
+            $(".ListContainerScroll .HorizontalScrollbarContainer").width("338px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "340px");
             $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-            $(".sf-element-list-box .ScrollArea").width("178px");
-            $(".sf-element-check-box .ScrollArea").width("178px");
-            $(".ListItems .sf-element-list-box-item").width("166px");
+            $(".sf-element-list-box .ScrollArea").width("338px");
+            $(".sf-element-check-box .ScrollArea").width("338px");
+            $(".ListItems .sf-element-list-box-item").width("326px");
             $(".ui-widget-content").css({
                 "background": "inherit",
                 "color": "inherit",
@@ -60,11 +62,42 @@ document.getElementById("shadow").onclick = function() {
 };
 
 document.getElementById("menubutton").onclick = function() {
-    if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-times icons\" alt=\"Open menu\"></i>") {
+		document.getElementById("shadow").style.width = "0%";
+document.getElementById("filter").style.width = "0px";
+$("#myaccordion,#myaccordionfilters").accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: 'content',
+        activate: function(event, ui) {
+            if (ui.newHeader.text() != "") {
+                $(".ui-accordion-header-active > .spota > .fa-angle-right").removeClass('fa-angle-right').addClass('fa-angle-down');
+            } else {
+                $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
+            }
+            $(".sf-input-with-placeholder").width("333px");
+            $(".ListContainer").width("360px");
+            $(".ListContainerScroll").width("354px");
+            $(".Image").css("left", "357px");
+            $(".sfc-scrollable").width("352px");
+            $(".ListContainerScroll .HorizontalScrollbarContainer").width("338px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "340px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
+            $(".sf-element-list-box .ScrollArea").width("338px");
+            $(".sf-element-check-box .ScrollArea").width("338px");
+            $(".ListItems .sf-element-list-box-item").width("326px");
+            $(".ui-widget-content").css({
+                "background": "inherit",
+                "color": "inherit",
+            });
+        },
+    });
+document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>";
+document.getElementById("shadow").classList.remove('shadowfilter');
+    if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-times fatimesmenu icons\" alt=\"Open menu\"></i>") {
         document.getElementById("menu").style.width = "0px";
         document.getElementById("shadow").style.width = "0%";
         document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>";
-        $("#myaccordion").accordion({
+        $("#myaccordion,#myaccordionfilters").accordion({
             collapsible: true,
             active: false,
             heightStyle: 'content',
@@ -74,17 +107,17 @@ document.getElementById("menubutton").onclick = function() {
                 } else {
                     $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
                 }
-                $(".sf-input-with-placeholder").width("173px");
-                $(".ListContainer").width("200px");
-                $(".ListContainerScroll").width("194px");
-                $(".Image").css("left", "197px");
-                $(".sfc-scrollable").width("192px");
-                $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-                $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+                $(".sf-input-with-placeholder").width("333px");
+                $(".ListContainer").width("360px");
+                $(".ListContainerScroll").width("354px");
+                $(".Image").css("left", "357px");
+                $(".sfc-scrollable").width("352px");
+                $(".ListContainerScroll .HorizontalScrollbarContainer").width("338px");
+                $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "340px");
                 $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-                $(".sf-element-list-box .ScrollArea").width("178px");
-                $(".sf-element-check-box .ScrollArea").width("178px");
-                $(".ListItems .sf-element-list-box-item").width("166px");
+                $(".sf-element-list-box .ScrollArea").width("338px");
+                $(".sf-element-check-box .ScrollArea").width("338px");
+                $(".ListItems .sf-element-list-box-item").width("326px");
                 $(".ui-widget-content").css({
                     "background": "inherit",
                     "color": "inherit",
@@ -95,15 +128,108 @@ document.getElementById("menubutton").onclick = function() {
         if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>") {
             document.getElementById("menu").style.width = "400px";
             document.getElementById("shadow").style.width = "100%";
-            document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-times icons\" alt=\"Open menu\"></i>";
+            document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-times fatimesmenu icons\" alt=\"Open menu\"></i>";
+
+
+
         }
     }
 };
 
+
+
+
+
+
+
+document.getElementById("filterbutton").onclick = function() {
+
+document.getElementById("menu").style.width = "0px";
+        document.getElementById("shadow").style.width = "0%";
+$("#myaccordion,#myaccordionfilters").accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: 'content',
+        activate: function(event, ui) {
+            if (ui.newHeader.text() != "") {
+                $(".ui-accordion-header-active > .spota > .fa-angle-right").removeClass('fa-angle-right').addClass('fa-angle-down');
+            } else {
+                $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
+            }
+            $(".sf-input-with-placeholder").width("333px");
+            $(".ListContainer").width("360px");
+            $(".ListContainerScroll").width("354px");
+            $(".Image").css("left", "357px");
+            $(".sfc-scrollable").width("352px");
+            $(".ListContainerScroll .HorizontalScrollbarContainer").width("338px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "340px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
+            $(".sf-element-list-box .ScrollArea").width("338px");
+            $(".sf-element-check-box .ScrollArea").width("338px");
+            $(".ListItems .sf-element-list-box-item").width("326px");
+            $(".ui-widget-content").css({
+                "background": "inherit",
+                "color": "inherit",
+            });
+        },
+    });
+        document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>";
+	document.getElementById("shadow").classList.remove('shadowmenu');
+ if (document.getElementById("filterbutton").innerHTML.trim() == "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>") {
+		document.getElementById("shadow").classList.add('shadowfilter');
+		document.getElementById("shadow").style.width = "100%";
+document.getElementById("filter").style.width = "400px";
+document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-times fatimesfilter icons\" alt=\"Open filters\"></i>";
+	}
+	else
+	{
+	if (document.getElementById("filterbutton").innerHTML.trim() == "<i class=\"fas fa-times fatimesfilter icons\" alt=\"Open filters\"></i>") {
+		document.getElementById("shadow").style.width = "0%";
+		document.getElementById("filter").style.width = "0px";
+		document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>";
+		$("#myaccordion,#myaccordionfilters").accordion({
+			collapsible: true,
+			active: false,
+			heightStyle: 'content',
+			activate: function(event, ui) {
+			    if (ui.newHeader.text() != "") {
+				$(".ui-accordion-header-active > .spota > .fa-angle-right").removeClass('fa-angle-right').addClass('fa-angle-down');
+			    } else {
+				$(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
+			    }
+			    $(".sf-input-with-placeholder").width("333px");
+			    $(".ListContainer").width("360px");
+			    $(".ListContainerScroll").width("354px");
+			    $(".Image").css("left", "357px");
+			    $(".sfc-scrollable").width("352px");
+			    $(".ListContainerScroll .HorizontalScrollbarContainer").width("338px");
+			    $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "340px");
+			    $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
+			    $(".sf-element-list-box .ScrollArea").width("338px");
+			    $(".sf-element-check-box .ScrollArea").width("338px");
+			    $(".ListItems .sf-element-list-box-item").width("326px");
+			    $(".ui-widget-content").css({
+				"background": "inherit",
+				"color": "inherit",
+			    });
+			},
+		    });
+		}
+		
+	}
+};
+
+
+
+
+
+
+
+
 //Accordian variables
 var headBkgColor = "#FFFFFF";
 
-$("#myaccordion").accordion({
+$("#myaccordion,#myaccordionfilters").accordion({
     collapsible: true,
     active: false,
     heightStyle: 'content',
@@ -114,17 +240,17 @@ $("#myaccordion").accordion({
         } else {
             $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
         }
-        $(".sf-input-with-placeholder").width("173px");
-        $(".ListContainer").width("200px");
-        $(".ListContainerScroll").width("194px");
-        $(".Image").css("left", "197px");
-        $(".sfc-scrollable").width("192px");
-        $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-        $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+        $(".sf-input-with-placeholder").width("333px");
+        $(".ListContainer").width("360px");
+        $(".ListContainerScroll").width("354px");
+        $(".Image").css("left", "357px");
+        $(".sfc-scrollable").width("352px");
+        $(".ListContainerScroll .HorizontalScrollbarContainer").width("338px");
+        $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "340px");
         $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-        $(".sf-element-list-box .ScrollArea").width("178px");
-        $(".sf-element-check-box .ScrollArea").width("178px");
-        $(".ListItems .sf-element-list-box-item").width("166px");
+        $(".sf-element-list-box .ScrollArea").width("338px");
+        $(".sf-element-check-box .ScrollArea").width("338px");
+        $(".ListItems .sf-element-list-box-item").width("326px");
         $(".ui-widget-content").css({
             "background": "inherit",
             "color": "inherit",
