@@ -257,3 +257,30 @@ margin-top: 5px;
 background: var(--tertiary-color);
 border-color: var(--tertiary-color);
 }
+
+#myaccordion::-webkit-scrollbar-track, #myaccordionfilters::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+
+#myaccordion::-webkit-scrollbar, #myaccordionfilters::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+#myaccordion::-webkit-scrollbar-thumb, #myaccordionfilters::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,left bottom, left top,
+									   color-stop(0.44, rgb(102,102,102)),
+									   color-stop(0.72, rgb(102,102,102)),
+									   color-stop(0.86, rgb(102,102,102)));
+}
+
+#myaccordion, #myaccordionfilters
+{
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+}
