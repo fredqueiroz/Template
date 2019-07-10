@@ -267,3 +267,5 @@ $(".ui-accordion .ui-accordion-header").css({
 $(".ui-accordion .ui-accordion-header").css({
     "borderColor": headBkgColor
 });
+
+$('.VerticalScrollbarContainer.sf-element.sf-element-scroll-bar.sfpc-right').attr('style', 'display: none');
