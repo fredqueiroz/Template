@@ -30,9 +30,9 @@ $(".icons").click(function() {
 document.getElementById("shadow").onclick = function() {
 document.getElementById("shadow").style.width = "0%";
 document.getElementById("filter").style.width = "0px";
-document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>";
+document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" title=\"Open filters\"></i>";
     document.getElementById("menu").style.width = "0px";
-    document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>";
+    document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" title=\"Open menu\"></i>";
     $("#myaccordion,#myaccordionfilters").accordion({
         collapsible: true,
         active: false,
@@ -92,12 +92,12 @@ $("#myaccordion,#myaccordionfilters").accordion({
             });
         },
     });
-document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>";
+document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" title=\"Open filters\"></i>";
 document.getElementById("shadow").classList.remove('shadowfilter');
-    if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-times fatimesmenu icons\" alt=\"Open menu\"></i>") {
+    if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-times fatimesmenu icons\" title=\"Open menu\"></i>") {
         document.getElementById("menu").style.width = "0px";
         document.getElementById("shadow").style.width = "0%";
-        document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>";
+        document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" title=\"Open menu\"></i>";
         $("#myaccordion,#myaccordionfilters").accordion({
             collapsible: true,
             active: false,
@@ -126,10 +126,10 @@ document.getElementById("shadow").classList.remove('shadowfilter');
             },
         });
     } else {
-        if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>") {
+        if (document.getElementById("menubutton").innerHTML.trim() == "<i class=\"fas fa-bars icons\" title=\"Open menu\"></i>") {
             document.getElementById("menu").style.width = "400px";
             document.getElementById("shadow").style.width = "100%";
-            document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-times fatimesmenu icons\" alt=\"Open menu\"></i>";
+            document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-times fatimesmenu icons\" title=\"Open menu\"></i>";
 
 
 
@@ -174,20 +174,20 @@ $("#myaccordion,#myaccordionfilters").accordion({
             });
         },
     });
-        document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" alt=\"Open menu\"></i>";
+        document.getElementById("menubutton").innerHTML = "<i class=\"fas fa-bars icons\" title=\"Open menu\"></i>";
 	document.getElementById("shadow").classList.remove('shadowmenu');
- if (document.getElementById("filterbutton").innerHTML.trim() == "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>") {
+ if (document.getElementById("filterbutton").innerHTML.trim() == "<i class=\"fas fa-filter icons\" title=\"Open filters\"></i>") {
 		document.getElementById("shadow").classList.add('shadowfilter');
 		document.getElementById("shadow").style.width = "100%";
 document.getElementById("filter").style.width = "400px";
-document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-times fatimesfilter icons\" alt=\"Open filters\"></i>";
+document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-times fatimesfilter icons\" title=\"Open filters\"></i>";
 	}
 	else
 	{
-	if (document.getElementById("filterbutton").innerHTML.trim() == "<i class=\"fas fa-times fatimesfilter icons\" alt=\"Open filters\"></i>") {
+	if (document.getElementById("filterbutton").innerHTML.trim() == "<i class=\"fas fa-times fatimesfilter icons\" title=\"Open filters\"></i>") {
 		document.getElementById("shadow").style.width = "0%";
 		document.getElementById("filter").style.width = "0px";
-		document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" alt=\"Open filters\"></i>";
+		document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter icons\" title=\"Open filters\"></i>";
 		$("#myaccordion,#myaccordionfilters").accordion({
 			collapsible: true,
 			active: false,
