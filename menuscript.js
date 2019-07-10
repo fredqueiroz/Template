@@ -1,3 +1,4 @@
+var filterSize = 350;
 var i = 1;
 var text = document.querySelector('#buttons').innerHTML;
 var buttons = text.split('<');
@@ -42,17 +43,17 @@ document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-filter ic
             } else {
                 $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
             }
-            $(".sf-input-with-placeholder").width("173px");
-            $(".ListContainer").width("200px");
-            $(".ListContainerScroll").width("194px");
-            $(".Image").css("left", "197px");
-            $(".sfc-scrollable").width("192px");
-            $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+            $(".sf-input-with-placeholder").width((filterSize - 27) + "px");
+            $(".ListContainer").width(filterSize + "px");
+            $(".ListContainerScroll").width((filterSize - 6) + "px");
+            $(".Image").css("left", (filterSize - 3) + "px");
+            $(".sfc-scrollable").width((filterSize - 8) + "px");
+            $(".ListContainerScroll .HorizontalScrollbarContainer").width((filterSize - 22) + "338px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", (filterSize - 20) + "px");
             $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-            $(".sf-element-list-box .ScrollArea").width("178px");
-            $(".sf-element-check-box .ScrollArea").width("178px");
-            $(".ListItems .sf-element-list-box-item").width("166px");
+            $(".sf-element-list-box .ScrollArea").width((filterSize - 22) + "px");
+            $(".sf-element-check-box .ScrollArea").width((filterSize - 22) + "px");
+            $(".ListItems .sf-element-list-box-item").width((filterSize - 34) + "px");
             $(".ui-widget-content").css({
                 "background": "inherit",
                 "color": "inherit",
@@ -74,17 +75,17 @@ $("#myaccordion,#myaccordionfilters").accordion({
             } else {
                 $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
             }
-            $(".sf-input-with-placeholder").width("173px");
-            $(".ListContainer").width("200px");
-            $(".ListContainerScroll").width("194px");
-            $(".Image").css("left", "197px");
-            $(".sfc-scrollable").width("192px");
-            $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+            $(".sf-input-with-placeholder").width((filterSize - 27) + "px");
+            $(".ListContainer").width(filterSize + "px");
+            $(".ListContainerScroll").width((filterSize - 6) + "px");
+            $(".Image").css("left", (filterSize - 3) + "px");
+            $(".sfc-scrollable").width((filterSize - 8) + "px");
+            $(".ListContainerScroll .HorizontalScrollbarContainer").width((filterSize - 22) + "338px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", (filterSize - 20) + "px");
             $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-            $(".sf-element-list-box .ScrollArea").width("178px");
-            $(".sf-element-check-box .ScrollArea").width("178px");
-            $(".ListItems .sf-element-list-box-item").width("166px");
+            $(".sf-element-list-box .ScrollArea").width((filterSize - 22) + "px");
+            $(".sf-element-check-box .ScrollArea").width((filterSize - 22) + "px");
+            $(".ListItems .sf-element-list-box-item").width((filterSize - 34) + "px");
             $(".ui-widget-content").css({
                 "background": "inherit",
                 "color": "inherit",
@@ -107,17 +108,17 @@ document.getElementById("shadow").classList.remove('shadowfilter');
                 } else {
                     $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
                 }
-                $(".sf-input-with-placeholder").width("173px");
-                $(".ListContainer").width("200px");
-                $(".ListContainerScroll").width("194px");
-                $(".Image").css("left", "197px");
-                $(".sfc-scrollable").width("192px");
-                $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-                $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+                $(".sf-input-with-placeholder").width((filterSize - 27) + "px");
+                $(".ListContainer").width(filterSize + "px");
+                $(".ListContainerScroll").width((filterSize - 6) + "px");
+                $(".Image").css("left", (filterSize - 3) + "px");
+                $(".sfc-scrollable").width((filterSize - 8) + "px");
+                $(".ListContainerScroll .HorizontalScrollbarContainer").width((filterSize - 22) + "338px");
+                $(".ListContainerScroll .VerticalScrollbarContainer").css("left", (filterSize - 20) + "px");
                 $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-                $(".sf-element-list-box .ScrollArea").width("178px");
-                $(".sf-element-check-box .ScrollArea").width("178px");
-                $(".ListItems .sf-element-list-box-item").width("166px");
+                $(".sf-element-list-box .ScrollArea").width((filterSize - 22) + "px");
+                $(".sf-element-check-box .ScrollArea").width((filterSize - 22) + "px");
+                $(".ListItems .sf-element-list-box-item").width((filterSize - 34) + "px");
                 $(".ui-widget-content").css({
                     "background": "inherit",
                     "color": "inherit",
@@ -156,17 +157,17 @@ $("#myaccordion,#myaccordionfilters").accordion({
             } else {
                 $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
             }
-            $(".sf-input-with-placeholder").width("173px");
-            $(".ListContainer").width("200px");
-            $(".ListContainerScroll").width("194px");
-            $(".Image").css("left", "197px");
-            $(".sfc-scrollable").width("192px");
-            $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+            $(".sf-input-with-placeholder").width((filterSize - 27) + "px");
+            $(".ListContainer").width(filterSize + "px");
+            $(".ListContainerScroll").width((filterSize - 6) + "px");
+            $(".Image").css("left", (filterSize - 3) + "px");
+            $(".sfc-scrollable").width((filterSize - 8) + "px");
+            $(".ListContainerScroll .HorizontalScrollbarContainer").width((filterSize - 22) + "338px");
+            $(".ListContainerScroll .VerticalScrollbarContainer").css("left", (filterSize - 20) + "px");
             $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-            $(".sf-element-list-box .ScrollArea").width("178px");
-            $(".sf-element-check-box .ScrollArea").width("178px");
-            $(".ListItems .sf-element-list-box-item").width("166px");
+            $(".sf-element-list-box .ScrollArea").width((filterSize - 22) + "px");
+            $(".sf-element-check-box .ScrollArea").width((filterSize - 22) + "px");
+            $(".ListItems .sf-element-list-box-item").width((filterSize - 34) + "px");
             $(".ui-widget-content").css({
                 "background": "inherit",
                 "color": "inherit",
@@ -197,17 +198,17 @@ document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-times fat
 			    } else {
 				$(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
 			    }
-			    $(".sf-input-with-placeholder").width("173px");
-			    $(".ListContainer").width("200px");
-			    $(".ListContainerScroll").width("194px");
-			    $(".Image").css("left", "197px");
-			    $(".sfc-scrollable").width("192px");
-			    $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-			    $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+			    $(".sf-input-with-placeholder").width((filterSize - 27) + "px");
+			    $(".ListContainer").width(filterSize + "px");
+			    $(".ListContainerScroll").width((filterSize - 6) + "px");
+			    $(".Image").css("left", (filterSize - 3) + "px");
+			    $(".sfc-scrollable").width((filterSize - 8) + "px");
+			    $(".ListContainerScroll .HorizontalScrollbarContainer").width((filterSize - 22) + "338px");
+			    $(".ListContainerScroll .VerticalScrollbarContainer").css("left", (filterSize - 20) + "px");
 			    $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-			    $(".sf-element-list-box .ScrollArea").width("178px");
-			    $(".sf-element-check-box .ScrollArea").width("178px");
-			    $(".ListItems .sf-element-list-box-item").width("166px");
+			    $(".sf-element-list-box .ScrollArea").width((filterSize - 22) + "px");
+			    $(".sf-element-check-box .ScrollArea").width((filterSize - 22) + "px");
+			    $(".ListItems .sf-element-list-box-item").width((filterSize - 34) + "px");
 			    $(".ui-widget-content").css({
 				"background": "inherit",
 				"color": "inherit",
@@ -236,21 +237,21 @@ $("#myaccordion,#myaccordionfilters").accordion({
     activate: function(event, ui) {
         if (ui.newHeader.text() != "") {
             $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
-            $(".ui-accordion-header-active > .spota > .fa-angle-right").removeClass('fa-angle-right').addClass('fa-angle-down');
+            $(".ui-accordion-header-active > .spota > .fa-angle	-right").removeClass('fa-angle-right').addClass('fa-angle-down');
         } else {
             $(".ui-corner-all > .spota > .fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-right');
         }
-        $(".sf-input-with-placeholder").width("173px");
-        $(".ListContainer").width("200px");
-        $(".ListContainerScroll").width("194px");
-        $(".Image").css("left", "197px");
-        $(".sfc-scrollable").width("192px");
-        $(".ListContainerScroll .HorizontalScrollbarContainer").width("178px");
-        $(".ListContainerScroll .VerticalScrollbarContainer").css("left", "180px");
+        $(".sf-input-with-placeholder").width((filterSize - 27) + "px");
+        $(".ListContainer").width(filterSize + "px");
+        $(".ListContainerScroll").width((filterSize - 6) + "px");
+        $(".Image").css("left", (filterSize - 3) + "px");
+        $(".sfc-scrollable").width((filterSize - 8) + "px");
+        $(".ListContainerScroll .HorizontalScrollbarContainer").width((filterSize - 22) + "338px");
+        $(".ListContainerScroll .VerticalScrollbarContainer").css("left", (filterSize - 20) + "px");
         $(".ListContainerScroll .VerticalScrollbarContainer").css("top", "0px");
-        $(".sf-element-list-box .ScrollArea").width("178px");
-        $(".sf-element-check-box .ScrollArea").width("178px");
-        $(".ListItems .sf-element-list-box-item").width("166px");
+        $(".sf-element-list-box .ScrollArea").width((filterSize - 22) + "px");
+        $(".sf-element-check-box .ScrollArea").width((filterSize - 22) + "px");
+        $(".ListItems .sf-element-list-box-item").width((filterSize - 34) + "px");
         $(".ui-widget-content").css({
             "background": "inherit",
             "color": "inherit",
