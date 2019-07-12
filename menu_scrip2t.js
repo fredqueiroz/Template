@@ -221,15 +221,6 @@ document.getElementById("filterbutton").innerHTML = "<i class=\"fas fa-times fat
 };
 
 
-
-
-
-
-
-
-//Accordian variables
-var headBkgColor = "#FFFFFF";
-
 $("#myaccordion,#myaccordionfilters").accordion({
     collapsible: true,
     active: false,
@@ -259,6 +250,9 @@ $("#myaccordion,#myaccordionfilters").accordion({
     },
 });
 
+//Accordian variables
+var headBkgColor = "#FFFFFF";
+
 //Header background color
 $(".ui-accordion .ui-accordion-header").css({
     "background": headBkgColor
@@ -270,3 +264,4 @@ $(".ui-accordion .ui-accordion-header").css({
 });
 
 $('.VerticalScrollbarContainer.sf-element.sf-element-scroll-bar.sfpc-right').attr('style', 'display: none');
+$('.HorizontalScrollbarContainer.sf-element.sf-element-scroll-bar.sfpc-bottom').attr('style', 'display: none');
